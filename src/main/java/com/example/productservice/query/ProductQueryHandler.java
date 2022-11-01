@@ -17,7 +17,6 @@ public class ProductQueryHandler {
     public ProductQueryHandler(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
-
     @QueryHandler
     List<ProductRestModel> findProducts(FindProductsQuery query){
         List<ProductRestModel> productsRest = new ArrayList<>();
